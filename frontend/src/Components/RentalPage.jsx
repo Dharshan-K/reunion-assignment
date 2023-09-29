@@ -4,7 +4,7 @@ import { RentalComponent } from "./RentalComponent";
 export const RentalPage = ()=>{
     const [properties, setProperties] = useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:3000/reunion/api/list-properties").then((response)=>{
+        axios.get("https://reunion-backend-1pw2.onrender.com/reunion/api/list-properties").then((response)=>{
             setProperties(response.data)
             console.log(response.data)
         })

@@ -10,7 +10,7 @@ export const MyProperty = ()=>{
         const headers = {
             'Authorization' : `Bearer ${localStorage.getItem('token')}`
         }
-        axios.get(`http://localhost:3000/reunion/api/property/${localStorage.getItem('username')}`, {headers}).then((response)=>{
+        axios.get(`https://reunion-backend-1pw2.onrender.com/reunion/api/property/${localStorage.getItem('username')}`, {headers}).then((response)=>{
             setProperties(response.data)
             console.log(response.data)
         })

@@ -19,7 +19,7 @@ export const SignUp = ()=>{
       accessLevel: accessLevel
 
     }
-    axios.post("http://localhost:3000/api/signup", data).then((response)=>{
+    axios.post("https://reunion-backend-1pw2.onrender.com/api/signup", data).then((response)=>{
       console.log(response);
       localStorage.setItem('username', response.data.username)
       localStorage.setItem('email', response.data.email)

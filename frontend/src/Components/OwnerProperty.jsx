@@ -4,7 +4,7 @@ export const OwnerProperty = (props)=>{
     console.log("property " ,property)
 
     const deleteProperty = (id)=>{
-        axios.delete(`http://localhost:3000/reunion/api/property/${localStorage.getItem('username')}/${id}`).then((response)=>{console.log(response.data)})
+        axios.delete(`https://reunion-backend-1pw2.onrender.com/reunion/api/property/${localStorage.getItem('username')}/${id}`).then((response)=>{console.log(response.data)})
     }
 
     return(

@@ -14,7 +14,7 @@ export const Login = ()=>{
       email: email,
       password: password
     }
-    await axios.post("http://localhost:3000/api/login", data).then((response)=>{
+    await axios.post("https://reunion-backend-1pw2.onrender.com/api/login", data).then((response)=>{
       console.log(response);
       localStorage.setItem('username', response.data.username)
       localStorage.setItem('email', response.data.email)
